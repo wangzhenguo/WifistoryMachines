@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BMNavPage" >
+
+    <include layout="@layout/device_title_xml" />
+
+<LinearLayout
+    style="@style/BMNavPage"
+    android:background="#fff9f9f9"
+    android:padding="38.0dip"
+    android:paddingTop="55.0dip" >
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="55.0dip"
+        android:src="@drawable/bm_wifi_icon" />
+
+    <Button
+        android:id="@+id/go_to_airkiss"
+        style="@style/BMNextBt"
+        android:layout_marginBottom="28.0dip"
+        android:padding="13.0dip"
+        android:text="@string/airkiss_not_ready" />
+
+    <Button
+        android:id="@+id/go_to_bind"
+        style="@style/BMNextBt"
+        android:layout_marginBottom="28.0dip"
+        android:padding="13.0dip"
+        android:text="@string/airkiss_ready" />
+
+    <Button
+        android:id="@+id/go_to_unbind"
+        style="@style/BMNextBt"
+        android:layout_marginBottom="28.0dip"
+        android:padding="13.0dip"
+        android:text="@string/Un_airkiss_ready" />
+
+</LinearLayout>
+    </LinearLayout>

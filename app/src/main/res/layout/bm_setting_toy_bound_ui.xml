@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BMNavPage" >
+
+    <include layout="@layout/my_toys_title_with_back" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22.0dip"
+        android:background="@color/bm_setting_stroke_out_color"
+        android:orientation="vertical"
+        android:paddingBottom="1.0dip"
+        android:paddingTop="1.0dip" >
+
+        <LinearLayout
+            android:id="@+id/volume_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:background="@drawable/bm_setting_item_click"
+                android:duplicateParentState="true"
+                android:orientation="horizontal"
+                android:paddingLeft="11.0dip"
+                android:paddingRight="9.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/setting_toy_volume"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/dimen_16_dip" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="13.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bm_right_arrow_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="22.0dip"
+                    android:background="@color/bm_setting_stroke_in_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/config_network_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:background="@drawable/bm_setting_item_click"
+            android:orientation="horizontal"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="9.0dip" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/setting_toy_config_network"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/dimen_16_dip" />
+
+            <ImageView
+                android:layout_width="7.0dip"
+                android:layout_height="13.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bm_right_arrow_normal" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearL_Toy_memory"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:background="@drawable/bm_setting_item_click"
+            android:orientation="horizontal"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="9.0dip" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/setting_toy_memory"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/dimen_16_dip" />
+
+            <ImageView
+                android:layout_width="7.0dip"
+                android:layout_height="13.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bm_right_arrow_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_toy_software_upgrade"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:background="@drawable/bm_setting_item_click"
+            android:orientation="horizontal"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="9.0dip" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/setting_toy_software_upgrade"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/dimen_16_dip" />
+
+            <ImageView
+                android:layout_width="7.0dip"
+                android:layout_height="13.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bm_right_arrow_normal" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="22.0dip"
+                android:background="@color/bm_setting_stroke_in_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/invite_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:background="@drawable/bm_setting_item_click"
+            android:orientation="horizontal"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="9.0dip" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/setting_toy_invite"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/dimen_16_dip" />
+
+            <ImageView
+                android:layout_width="7.0dip"
+                android:layout_height="13.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bm_right_arrow_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="22.0dip"
+                android:background="@color/bm_setting_stroke_in_color" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/invite_tv_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="22.0dip"
+                android:background="@color/bm_setting_stroke_in_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/admin_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:background="@drawable/bm_setting_item_click"
+            android:orientation="horizontal"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="9.0dip" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/setting_toy_idmin"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/dimen_16_dip" />
+
+            <TextView
+                android:id="@+id/admin_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8.0dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxWidth="200.0dip"
+                android:singleLine="true"
+                android:text="@string/setting_toy_idmin"
+                android:textColor="#ff999999"
+                android:textSize="@dimen/dimen_16_dip" />
+
+            <ImageView
+                android:id="@+id/admin_arrow"
+                android:layout_width="7.0dip"
+                android:layout_height="13.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bm_right_arrow_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relat_device_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/add_device"
+            android:layout_width="@dimen/dimen_300_dip"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bm_setting_quit_btn"
+            android:textColor="@drawable/bm_setting_quit_text" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="color_bg_splash">#202020</color>
+    <color name="color_bg_common">#f9f9f9</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_purple">#ff0080</color>
+    <color name="color_hint">#b9b9b9</color>
+    <color name="color_header">#F49F10</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_gary">#dadada</color>
+    <color name="color_yellow">#11bbff</color>
+    <color name="color_shadaw_black">#000000</color>
+    <color name="color_line">#737373</color>
+
+    <color name="story_list_name">#815349</color>
+    <color name="white">#ffffff</color>
+    <color name="card_info_title">#815349</color>
+    <color name="card_info_msg">#926054</color>
+    <color name="story_list_item_name">#815349</color>
+    <color name="story_list_item_ds">#ccb4a6</color>
+    <color name="story_list_item_divider">#e4cbb4</color>
+    <color name="text_orange">#815349</color>
+    <color name="default_text_color">#815349</color>
+    <color name="default_text_hint_color">#ccb4a6</color>
+    <color name="color_header_diver">#ca9a87</color>
+    <color name="color_ssid_item_click">#ff6b6b</color>
+    <color name="color_help">#ea6362</color>
+    <color name="color_tips">#7b554b</color>
+    <color name="color_help_detial">#b28c83</color>
+
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+
+    <color name="db_bar_bg">#7B7B7B</color>
+    <color name="chart_time_s">#D2D2D2</color>
+    <color name="label_navigation">#F49F10</color>
+
+    <color name="label_navigation_s">#FF505F</color>
+
+    <color name="label_my_toys_s">#FF625F</color>
+    <color name="register_top_bg">#1DD9EA</color>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_312_dip"
+        android:layout_height="@dimen/dimen_212_dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_93_dip"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_16_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_56_dip"
+            android:gravity="center"
+            android:text="@string/wifi_unable" />
+
+        <Button
+            android:id="@+id/btn_set"
+            style="@style/text_16_white"
+            android:layout_width="@dimen/dimen_200_dip"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_25_dip"
+            android:background="@drawable/btn_blue_s_binary_selector"
+            android:text="@string/wifi_setting" >
+        </Button>
+
+        <TextView
+            android:id="@+id/text_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dimen_6_dip"
+            android:text="@string/text_back"
+            style="@style/text_14_purple" />
+    </LinearLayout>
+
+</LinearLayout>

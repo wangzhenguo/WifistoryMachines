@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:form="http://schemas.android.com/apk/res-auto"
+    style="@style/BMNavPage"
+    >
+
+    <include layout="@layout/device_title_xml" />
+
+    <LinearLayout
+        android:id="@+id/LinearL_top_wifi"
+        style="@style/BMNavPage"
+        android:background="#fff9f9f9">
+
+        <TextView
+            style="@style/BMSpecialTv"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="22.0dip"
+            android:layout_marginRight="22.0dip"
+            android:layout_marginTop="30.0dip"
+            android:text="@string/airkiss_input_ssid_and_pwd" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:background="#ffcecece"
+            android:orientation="vertical"
+            android:paddingBottom="1.0dip"
+            android:paddingTop="1.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:background="@drawable/bm_setting_item_click"
+                android:orientation="horizontal"
+                android:paddingLeft="11.0dip"
+                android:paddingRight="4.0dip" >
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bm_wormhole_network_icon" />
+
+                <EditText
+                    android:id="@+id/network_name_view"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_input_ssid"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/dimen_14_dip" />
+
+                <FrameLayout
+                    android:id="@+id/network_connect_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="4.0dip" >
+
+                    <TextView
+                        android:id="@+id/network_connect_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/bm_change_network_stroke_bg"
+                        android:padding="4.0dip"
+                        android:text="@string/hotspot_guide_change_wifi"
+                        android:textColor="@color/bm_tv_press_color_selector"
+                        android:textSize="@dimen/dimen_14_dip" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="42.0dip"
+                    android:background="#ffd6d8df" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:background="@drawable/bm_setting_item_click"
+                android:orientation="horizontal"
+                android:paddingLeft="11.0dip"
+                android:paddingRight="9.0dip"
+
+                >
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bm_wormhole_password_icon" />
+
+                <EditText
+                    android:id="@+id/network_password_view"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_input_cur_network_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/dimen_14_dip" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_pin"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:background="@drawable/bm_setting_item_click"
+                android:orientation="horizontal"
+                android:paddingLeft="11.0dip"
+                android:paddingRight="4.0dip" >
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/qrcode_img" />
+
+                <EditText
+                    android:id="@+id/network_pincord_view"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_pincord_ssid"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/dimen_14_dip" />
+
+                <FrameLayout
+                    android:id="@+id/network_pincord_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="4.0dip"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/network_pincord_tv"
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/qrcode_img"
+                        android:padding="4.0dip"
+
+                        android:textColor="@color/bm_tv_press_color_selector"
+                        android:textSize="@dimen/dimen_14_dip" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/BMNormalTv"
+            android:layout_marginBottom="35.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:gravity="center_horizontal"
+            android:text="@string/airkiss_input_ssid_and_pwd_tips"
+            android:textSize="@dimen/dimen_14_dip" />
+
+        <Button
+            android:id="@+id/config_bt"
+            style="@style/BMNextBt"
+            android:layout_marginLeft="22.0dip"
+            android:layout_marginRight="22.0dip"
+            android:background="@drawable/bm_btn_solid_bg_set_net"
+            android:text="@string/configure_text"
+            android:textColor="@color/bm_set_net_text_selector" />
+
+        <TextView
+            android:id="@+id/switch_to_hotspot_tv"
+            style="@style/BMSpecialTv"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:padding="12.0dip"
+            android:text="@string/classic_mode"
+            android:textSize="@dimen/dimen_14_dip"
+            android:visibility="gone"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeL_wifi"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/mainbgcolor"
+        android:visibility="gone"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_link"
+                android:layout_width="@dimen/dimen_375_dip"
+                android:layout_height="@dimen/dimen_375_dip"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/pic_link_guide_03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_50_dip"
+                android:text="@string/Toylink_loading1"
+                android:textColor="@color/link_bigtext"
+                android:textSize="@dimen/dimen_14_dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40_dip"
+                android:layout_marginRight="@dimen/dimen_40_dip"
+                android:layout_marginTop="@dimen/dimen_50_dip"
+                android:gravity="center"
+                android:text="@string/Toylink_loading2"
+                android:textColor="@color/link_normaltext"
+                android:textSize="@dimen/dimen_14_dip" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

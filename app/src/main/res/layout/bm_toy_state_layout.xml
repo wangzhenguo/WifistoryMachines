@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/frameL_bm_toy_state"
+    android:clickable="true"
+    android:background="#63000000" >
+
+    <RelativeLayout
+        android:layout_width="300.0dip"
+        android:layout_height="340.0dip"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="8.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="28.0dip"
+                android:background="@drawable/bm_mainui_toy_state_title_background"
+                android:gravity="center|left"
+                android:paddingLeft="16.0dip"
+                android:text="@string/new_main_ui_toy_state_title"
+                android:textColor="#ff999999"
+                android:textSize="14.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="188.0dip"
+                android:background="#fffcf8f5"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/electricity_state_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="电量"
+                        android:textColor="#ff333333"
+                        android:textSize="18.0dip" />
+
+                    <ImageView
+                        android:id="@+id/electricity_state_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/electricity_state_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="18.0dip"
+                        android:src="@drawable/bm_state_view_toy_battery_res_list" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/temperature_state_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="温度"
+                        android:textColor="#ff333333"
+                        android:textSize="18.0dip" />
+
+                    <ImageView
+                        android:id="@+id/temperature_state_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/temperature_state_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="18.0dip"
+                        android:src="@drawable/bm_temperature_bg" />
+
+                    <TextView
+                        android:id="@+id/temperature_state_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/temperature_state_iv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="23dp"
+                        android:text="26℃"
+                        android:textColor="#ff333333"
+                        android:textSize="18.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/net_state_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/new_main_ui_toy_state_offline"
+                        android:textColor="#ff333333"
+                        android:textSize="18.0dip" />
+
+                    <ImageView
+                        android:id="@+id/net_state_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/net_state_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="18.0dip"
+                        android:src="@drawable/bm_toy_online_big" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bm_mainui_toy_state_volume_background"
+                android:gravity="center"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="14.0dip"
+
+                >
+
+                <TextView
+                    android:id="@+id/volume_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="hhhhh"
+                    android:textColor="#ffff8698"
+                    android:textSize="18.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/volume_tv"
+                    android:layout_marginTop="24.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/volume_down_ib"
+                        android:layout_width="26.0dip"
+                        android:layout_height="26.0dip"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bm_toy_volume_down_control" />
+
+                    <ImageView
+                        android:id="@+id/volume_value_iv"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="28.0dip"
+                        android:layout_weight="1.0"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="26.0dip"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bm_state_view_volume_res_list" />
+
+                    <ImageButton
+                        android:id="@+id/volume_up_ib"
+                        android:layout_width="26.0dip"
+                        android:layout_height="26.0dip"
+                        android:layout_marginLeft="28.0dip"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bm_toy_volume_up_control" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/close_ib"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/bm_toy_state_bar_close_btn" />
+    </RelativeLayout>
+
+</FrameLayout>

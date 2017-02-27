@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+    defaultConfig {
+        applicationId "com.chomp.wifistorymachine"
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 3
+        versionName "3.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+//      manifest.srcFile 'AndroidManifest.xml'
+//      java.srcDirs = ['src']
+//      resources.srcDirs = ['src']
+//      aidl.srcDirs = ['src']
+//      renderscript.srcDirs = ['src']
+//      res.srcDirs = ['res']
+//      assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/okhttp-3.4.1.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/simpleconfigwizardlib.jar')
+    compile files('libs/permission-lib.jar')
+
+    testCompile 'junit:junit:4.12'
+}
+
+
+

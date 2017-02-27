@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_header"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_bg_common"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <include layout="@layout/chat_title_xml" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#999999"
+        android:visibility="gone"
+        android:id="@+id/topView"/>
+    <!-- 语音列表 -->
+
+    <ListView
+        android:id="@+id/voiceNotesListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#999999"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:listSelector="#00000000"
+        android:paddingTop="0dp"
+        android:paddingBottom="2dp"
+        android:cacheColorHint="#00000000">
+    </ListView>
+
+    <!-- 底部按钮布局 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.chomp.wifistorymachine.ui.chat.AudioRecorderButton
+            android:id="@+id/recorderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48_dip"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="@dimen/dimen_135_dip"
+            android:layout_marginRight="@dimen/dimen_100_dip"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/btn_chat_recorder"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:padding="5dp"
+
+            android:textColor="#727272" >
+        </com.chomp.wifistorymachine.ui.chat.AudioRecorderButton>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+    </FrameLayout>
+
+</LinearLayout>
+    </RelativeLayout>

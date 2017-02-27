@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="global_bg_color">#fff8f8f8</color>
+    <color name="bm_setting_stroke_out_color">#ffe2e2e2</color>
+    <color name="bm_setting_item_normal">#ffffffff</color>
+    <color name="bm_setting_stroke_in_color">#ffe9e9e9</color>
+    <color name="bm_setting_item_pressed">#ffffc13c</color>
+    <color name="chatting_record_btn_normal">#ffff8903</color>
+    <color name="bm_record_text_normal">#ff333333</color>
+    <color name="bm_btn_pressed">#ffffc03c</color>
+    <color name="black">#ff000000</color>
+    <color name="mainbgcolor">#fff3f3f3</color>
+    <color name="link_bigtext">#ff905f34</color>
+    <color name="link_normaltext">#ff373f44</color>
+</resources>

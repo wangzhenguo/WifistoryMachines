@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能故事机</string>
+    <!-- commmon -->
+    <string name="text_back">返回</string>
+    <string name="action_settings">Settings</string>
+    <string name="cancel">取消</string>
+    <string name="need_help">帮助</string>
+    <string name="settings">设置</string>
+
+    <!-- login、regist、reset -->
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="logining">登录中</string>
+    <string name="go_login">已有账号，去登陆</string>
+    <string name="go_regisit">没有账号？ 去注册</string>
+    <string name="reset_password">忘记密码</string>
+    <string name="identify_code_hint">请输入验证码</string>
+    <string name="regist">注册</string>
+    <string name="registing">注册中</string>
+    <string name="reset_passwd">重置密码</string>
+    <string name="reset">重置</string>
+    <string name="reseting">重置中...</string>
+    <string name="change">修改</string>
+    <string name="changeing">修改中...</string>
+    <string name="connect_timeout">联网失败</string>
+    <string name="get_code">获取</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="login_name">请输入您的名字</string>
+    <string name="login_name_hint">请输入您的手机号</string>
+    <string name="login_password_hint">请输入6-20位密码</string>
+    <string name="password_wrong">密码错误</string>
+    <string name="account_exist">手机号已经注册，请直接登录</string>
+    <string name="veri_code_sended">验证码已经发送，请查收</string>
+    <string name="veri_code_send_fail">验证码发送失败，请稍后重试</string>
+    <string name="veri_code_wrong">验证码错误</string>
+    <string name="regist_succ">注册成功</string>
+    <string name="regist_fail">注册失败，请稍后重试</string>
+    <string name="name_num_empty">请先输入您的名字</string>
+    <string name="phone_num_empty">请先输入手机号</string>
+    <string name="veri_code_empty">请先获取验证码</string>
+    <string name="phone_num_wrong">请输入正确的手机号</string>
+    <string name="login_succ">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="account_passwd_empty">密码为空</string>
+    <string name="account_unexist">账号不存在</string>
+    <string name="reset_passwd_succ">重置成功</string>
+    <string name="change_passwd_succ">修改成功</string>
+    <string name="reset_passwd_fail">重置失败</string>
+    <string name="bind_fail">绑定失败</string>
+    <string name="has_bind">绑定失败，已被其它账号绑定</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="binding">绑定中...</string>
+    <string name="ubind_fail">解绑失败</string>
+    <string name="ubind_success">解绑成功</string>
+    <string name="ubinding">解绑中...</string>
+    <!-- account -->
+    <string name="not_login">未登录</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_photo">相册选择</string>
+    <string name="my_account">我的账户</string>
+    <string name="gender_male">男</string>
+    <string name="gender_female">女</string>
+    <string name="get_account_info_fail">获取信息失败，请稍后再试</string>
+    <string name="update_avatar_succ">头像上传成功</string>
+    <string name="update_avatar_fail">头像上传失败，请稍后再试</string>
+    <string name="nickname_saved">昵称修改成功</string>
+    <string name="nickname_unsaved">昵称修改失败</string>
+    <string name="sex">性别</string>
+    <string name="nick_name">昵称:</string>
+    <string name="system_message">系统消息</string>
+    <!-- home -->
+    <string name="search_hint">查找感兴趣的内容</string>
+    <string name="home_story">首页</string>
+    <string name="home_group">家庭圈</string>
+    <string name="home_local_story">本地故事</string>
+    <string name="home_user">更多</string>
+    <string name="not_aviable">技能冷却中...</string>
+    <string name="none_device">未连接到设备</string>
+
+    <string name="story_sort_item1">试听</string>
+    <string name="story_sort_item2">点播</string>
+    <string name="story_sort_item3">下载</string>
+    <string name="story_sort_item4">喜欢</string>
+
+    <!-- story -->
+    <string name="story_type1">趣味聊天</string>
+    <string name="story_type2">童话故事</string>
+    <string name="story_type3">十万个为什么</string>
+    <string name="story_type4">一千零一夜</string>
+    <string name="story_type5">儿童歌曲</string>
+    <string name="story_type6">礼仪经书</string>
+    <string name="story_type7">世界名曲</string>
+    <string name="story_type8">唐诗宋词</string>
+    <string name="story_type9">成语故事</string>
+    <string name="story_type10">睡前故事</string>
+    <string name="story_type11">幼儿大课堂</string>
+    <string name="story_type12">英文歌曲</string>
+
+    <!-- setting -->
+    <string name="str_loading_dialog">加载中...</string>
+    <string name="about">关于智能故事机</string>
+    <string name="contact_us">联系我们</string>
+    <string name="about_unisound">©Unisound</string>
+    <string name="setting_more">更多</string>
+    <string name="about_info">KAR DEMO是智能化儿童早教机器人的配套手机APP,您可以在这儿了解并更好的使用您的设备,更多好玩的功能敬请期待</string>
+    <string name="copyright">© Unisound</string>
+
+    <!-- usercenter -->
+    <string name="userinfo">个人信息</string>
+    <string name="change_password">修改密码</string>
+    <string name="user_center">个人中心</string>
+    <string name="log_out">退出登录</string>
+    <string name="user_address">城市:</string>
+    <string name="user_head">头像</string>
+    <string name="user_sex">性别:</string>
+    <string name="user_birthday">生日:</string>
+    <string name="user_save">保存</string>
+    <string name="user_modify">修改</string>
+    <!-- 添加设备 -->
+    <string name="add_device_tip1">请在开启语音后对设备说出</string>
+    <string name="add_device_tip2">"绑定设备"</string>
+    <string name="add_device_tip3">将设备播报的数字填入下方</string>
+    <string name="bind_device">绑定</string>
+    <string name="device_nick_name">设备昵称</string>
+    <string name="device_nick_name_hint">请给设备取一个名字</string>
+    <string name="bb_nick_name">怎么称呼宝宝呢？</string>
+    <string name="bb_nick_name_hint">填写宝宝的名字</string>
+    <string name="bb_birthday">宝宝几岁啦？</string>
+    <string name="bb_birthday_hint">填写宝宝的生日</string>
+    <string name="bb_sex">宝宝是王子还是公主？</string>
+    <string name="bb_boy">小王子</string>
+    <string name="bb_girl">小公主</string>
+
+    <!-- 解绑设备 -->
+    <string name="ubind_device">解绑设备</string>
+    <string name="ubind_dialog_title">确定解绑设备？</string>
+    <string name="ubind_dialog_sure">确定</string>
+    <string name="ubind_dialog_cancel">在考虑一下</string>
+    <!-- help -->
+    <string name="help">常见问题帮助</string>
+    <string name="help_one_title">开启设备</string>
+    <string name="help_one_detail">还不会如何开启设备吗？点击设备上的开机按钮,设备会启动,听到开机音乐就证明设备启动啦。</string>
+    <string name="help_two_title">未能连接WIFI</string>
+    <string name="help_two_detail">有可能是您的手机未启用WIFI网络。您可以在手机的"设置">"WLAN"中选择一个可用的WIFI接入。如果您已接入WIFI网络,请检查WIFI热点是否已接入互联网,或该热点是否已允许您的设备访问互联网。</string>
+    <string name="help_three_title">配置网络/切换网络</string>
+    <string name="help_three_detail">配置网络时,需要先将设备调至配置网络模式,当听到可以配网的提示音后,即可进行配网操作。进入配网模式,请按住设备上一首按键 5秒钟以上即可。</string>
+    <string name="help_four_title">故事机配网失败原因</string>
+    <string name="help_four_detail">故事机配网目前不支持5GWIFI信号,请先看下是否连接了可用WIFI。另外根据声音的反馈,也可以定位到问题所在,例如密码输入错误。如果手机音量较小,或配网距离设备较远,请调大音量,并靠近设备再次重试。</string>
+
+    <!-- connect wifi -->
+    <string name="wifi_setting">去设置</string>
+    <string name="already_turn_on">嗯，已开启</string>
+    <string name="wifi">WIFI:</string>
+    <string name="wifi_hint">请选择一个WIFI</string>
+    <string name="wifi_passwd">密码:</string>
+    <string name="wifi_passwd_hint">请输入WIFI密码</string>
+    <string name="add_device_done">添加已完成</string>
+    <string name="card_info_title">试试看</string>
+    <string name="card_info_msg">激活设备语音功能,然后说出"播放XXX"或直接说出内容名称就可以点播啦</string>
+    <string name="main_title">KAR Demo</string>
+    <string name="connect_wifi">开始配置</string>
+    <string name="connect_wifi_notice">目前暂不支持5G频段，请将手机连接到2.4G频段使用</string>
+    <string name="connect_network">配置网络</string>
+    <string name="wifi_empty">当前无可用WIFI</string>
+    <string name="wifi_passwd_empty">WIFI密码格式错误</string>
+    <string name="connect_succ">返回主页</string>
+    <string name="connect_fail">失败重添</string>
+    <string name="macth_device">设备配对</string>
+    <string name="change_wifi">切换WIFI</string>
+    <string name="ds_xmly">喜马拉雅正版内容</string>
+    <string name="wifi_tips">暂不支持5G WIFI，请选用2.4G WIFI联网。</string>
+    <string name="wifi_unable">手机未连接到网络\n请确认WIFI连接处于可用状态</string>
+    <string name="add_device">添加设备</string>
+    <string name="no_device">还没有设备？</string>
+    <string name="no_device_toast">请联系云知声相关人员</string>
+    <string name="turn_on_device">\"请先接通电源，确认设备处于通电状态,扫描二维码\"</string>
+    <string name="skip">跳过</string>
+    <string name="device_on">已听到启动音乐声</string>
+    <string name="pin_cond">绑定设备码</string>
+    <string name="add_device_name">给玩具起个外号吧</string>
+    <string name="next">下一步</string>
+    <string name="select_wifi_tips">\"请选择设备接入的WIFI\"</string>
+    <string name="show_password">显示密码</string>
+    <string name="hide_password">隐藏密码</string>
+    <string name="select_wifi">选择网络</string>
+    <string name="turn_on_wifi">请打开手机WIFI</string>
+    <string name="turn_on_wifi_tips">不然无法连接到你的设备</string>
+    <string name="connect_wifi_tips">\"请长按设备上的上一首键5秒后松开\"</string>
+    <string name="wifi_switch_turned_on">已听到就绪提示</string>
+    <string name="sending_info">传输中...</string>
+    <string name="sended">传输完毕</string>
+    <string name="connecting_tips">\"请把手机尽量靠近设备！要在15厘米内哦\"</string>
+    <string name="connecting_wifi">故事机联网</string>
+    <string name="connect_done">联网已完成</string>
+    <string name="connect_one">添加设备（未完成）</string>
+    <string name="connect_one_done">添加设备（完成）</string>
+    <string name="connect_two">选择网络（未完成）</string>
+    <string name="connect_two_done">打开设备（完成）</string>
+    <string name="connect_three">连接网络（未完成）</string>
+    <string name="connect_three_done">连接网络（完成）</string>
+    <string name="connect_four">故事机联网（未完成）</string>
+    <string name="connect_four_done">故事机联网（完成）</string>
+
+
+    <string name="device">设备</string>
+
+    <!--聊天-->
+    <string name="chat_list">聊天群组</string>
+    <string name="create_group">创建</string>
+    <string name="create">创建群组</string>
+    <string name="invite">邀请</string>
+    <string name="invite_member">邀请成员</string>
+    <string name="find">查找</string>
+    <string name="send_invite">发出邀请</string>
+    <string name="search_result">查找结果</string>
+    <string name="group_info">群组信息</string>
+    <string name="group_member">群组成员</string>
+    <string name="group_manager">管理</string>
+    <string name="add">添加</string>
+    <string name="remove">移除</string>
+    <string name="chat_add_device">添加设备</string>
+    <string name="chat_remove_device">移除设备</string>
+    <string name="complete">完成</string>
+    <string name="group_exit">退出群组</string>
+    <string name="group_delete">删除群组</string>
+    <string name="invite_dispose">是否同意对方邀请?</string>
+    <string name="invite_agree">同意加入</string>
+    <string name="invite_refuse">残忍拒绝</string>
+
+    <string name="setting_my_info">我的信息</string>
+    <string name="setting_child_info">宝宝信息</string>
+    <string name="setting_toy_info">我的玩具</string>
+    <string name="setting_my_listening">生物钟</string>
+    <string name="setting_my_storevoice">软件版本</string>
+    <string name="setting_message_manager">消息管理</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_my_shells">我的贝壳</string>
+    <string name="setting_about_beme">关于我们</string>
+    <string name="app_help">用户指南</string>
+
+    <string name="setting_toy_volume">玩具音量</string>
+    <string name="setting_toy_config_network">更改网络配置</string>
+    <string name="setting_toy_invite">邀请亲友绑定</string>
+    <string name="setting_toy_idmin">管理员</string>
+    <string name="setting_toy_memory">玩具内存管理</string>
+    <string name="setting_toy_software_upgrade">玩具软件升级</string>
+
+    <string name="airkiss_input_ssid_and_pwd">输入WiFi名和密码</string>
+    <string name="hint_input_ssid">请输入网络名</string>
+    <string name="hotspot_guide_change_wifi">更改WiFi</string>
+    <string name="airkiss_input_ssid_and_pwd_tips">该玩具暂不支持5GHz无线网络，请确认当前WiFi为2.4GHz网络</string>
+    <string name="configure_text">立即联网</string>
+    <string name="binding_configure_text">立即绑定</string>
+    <string name="classic_mode">经典模式</string>
+    <string name="hint_input_cur_network_password">请输入密码</string>
+    <string name="hint_pincord_ssid">扫描机身二维码</string>
+    <string name="Toylink_loading1">正在连接附近玩具...</string>
+    <string name="Toylink_loading2">需要耐心等待大约30秒，玩具会说出“WIFI连接成功”</string>
+
+    <string name="airkiss_not_ready">首次配置，玩具未联网</string>
+    <string name="airkiss_ready">绑定已联网的玩具</string>
+
+    <string name="configure_toy">配置玩具</string>
+    <string name="binding_toy">绑定玩具</string>
+
+    <string name="Toylink_loading3">正在绑定玩具...</string>
+    <string name="binding_succ">绑定成功</string>
+    <string name="binding_fail">绑定失败，请稍后重试</string>
+
+    <string name="un_binding_fail">当前未绑定故事机，不能点播</string>
+
+    <string name="un_binding_chat">当前未绑定故事机,不能聊天</string>
+
+    <string name="un_binding_family_circle">当前未绑定故事机,不能进入家庭圈</string>
+
+    <string name="Un_airkiss_ready">解除当前用户已绑定的玩具</string>
+    <string name="Un_Toylink_loading3">正在解绑玩具...</string>
+    <string name="un_binding_succ">解绑成功</string>
+    <string name="un_binding_succ_fail">解绑失败，请稍后重试</string>
+
+    <string name="wifi_airkiss_ready">玩具联网</string>
+
+    <string name="chat_with">聊天</string>
+
+    <string name="wifi_name_airkiss_ready">当前用户还未绑定玩具</string>
+    <string name="title_activity_conversation_list_fragment">ConversationListFragment</string>
+
+    <!--<string name="recorder_path">/mnt/sdcard/ChompRecorder/</string>-->
+    <!--<string name="load_recorder_path">/mnt/sdcard/ChompRecorder/StoryMachine/</string>-->
+
+    <string name="str_recorder_normal">按住   说话</string>
+    <string name="str_recorder_recording">松开   结束</string>
+    <string name="str_recorder_want_cancel">滑动手指，取消录音</string>
+
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update">版本检测中...</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">残忍拒绝</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+
+
+
+    <string name="new_main_ui_toy_state_electricity">电量：%1$s</string>
+    <string name="new_main_ui_toy_state_electricity_charging">充电中</string>
+    <string name="new_main_ui_toy_state_offline">离线</string>
+    <string name="new_main_ui_toy_state_online">在线</string>
+    <string name="new_main_ui_toy_state_sleep">离线</string>
+    <string name="new_main_ui_toy_state_title">玩具状态</string>
+    <string name="new_main_ui_toy_volume_value">当前音量：%1$s</string>
+
+
+
+</resources>

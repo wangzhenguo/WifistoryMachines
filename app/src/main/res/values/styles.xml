@@ -1,0 +1,127 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="TranslucentTheme" parent="AppTheme"></style>
+    
+    <style name="text_18_black">
+        <item name="android:textSize">@dimen/size_18dp</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+    <style name="text_16_black">
+        <item name="android:textSize">@dimen/size_16dp</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+
+    <style name="text_14_black">
+        <item name="android:textSize">@dimen/size_14dp</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+    <style name="text_12_black">
+        <item name="android:textSize">@dimen/size_12dp</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+    <style name="text_18_white">
+        <item name="android:textSize">@dimen/size_18dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="text_16_white">
+        <item name="android:textSize">@dimen/size_16dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="text_14_white">
+        <item name="android:textSize">@dimen/size_14dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+    <style name="text_12_white">
+        <item name="android:textSize">@dimen/size_12dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="text_14_purple">
+        <item name="android:textSize">@dimen/size_14dp</item>
+        <item name="android:textColor">@color/color_purple</item>
+    </style>
+    <style name="text_16_hint">
+        <item name="android:textSize">@dimen/size_16dp</item>
+        <item name="android:textColor">@color/color_hint</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="anim_menu_bottombar">
+        <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
+    </style>
+    <!--POP_FULL-->
+    <style name="Animations_GrowFromBottom">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    
+    <style name="AppStartLoad" parent="@android:style/Theme">
+        <item name="android:windowBackground">@drawable/icon_splash</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="BMNavPage">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/global_bg_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="BMSpecialTv">
+        <item name="android:textSize">@dimen/size_16dp</item>
+        <item name="android:textColor">@color/bm_tv_press_color_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BMNormalTv">
+        <item name="android:textSize">@dimen/size_14dp</item>
+        <item name="android:textColor">@color/bm_record_text_normal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BMBasicBt">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bm_btn_solid_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BMNextBt" parent="@style/BMBasicBt">
+        <item name="android:textSize">@dimen/size_16dp</item>
+        <item name="android:padding">11.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <!-- 录音对话框 <style name="Theme_AudioDialog"> -->
+    <style name="Theme_AudioDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>
