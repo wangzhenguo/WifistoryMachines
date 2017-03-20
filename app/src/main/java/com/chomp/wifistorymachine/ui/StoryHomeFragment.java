@@ -26,12 +26,12 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.GridView;
+
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.chomp.wifistorymachine.R;
@@ -42,14 +42,13 @@ import com.chomp.wifistorymachine.model.BaseResponseBean;
 import com.chomp.wifistorymachine.model.ResponseBean;
 import com.chomp.wifistorymachine.okhttp.HttpUtils;
 import com.chomp.wifistorymachine.okhttp.OkHttpUtils;
+import com.chomp.wifistorymachine.ui.chat.ConversationListFragment;
 import com.chomp.wifistorymachine.util.JsonParseUtil;
 import com.chomp.wifistorymachine.util.Toaster;
 import com.chomp.wifistorymachine.util.Utils;
+import com.chomp.wifistorymachine.view.MyImgScroll;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
-
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -61,6 +60,7 @@ import java.util.List;
 import okhttp3.Call;
 import okhttp3.Request;
 import okhttp3.Response;
+import android.widget.ImageView.ScaleType;
 
 
 
@@ -103,7 +103,7 @@ public class StoryHomeFragment extends BaseFragment {
 	private ImageView volume_down_ib;
 
 	private ImageButton close_ib;
-	private GridView list_story_type;
+	private MyGridView list_story_type;
 	private StoryTypeAdapter adapter;
 	protected Activity mActivity;
 
@@ -229,6 +229,27 @@ public class StoryHomeFragment extends BaseFragment {
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
 		this.mActivity = activity;
+
+		if(listViews != null){
+			listViews.clear();
+			listViews = null;
+		}
+		listViews = new ArrayList<View>();
+		int[] imageResId = new int[] { R.drawable.banner1, R.drawable.banner2,R.drawable.banner1,R.drawable.banner2};
+		for (int i = 0; i < imageResId.length; i++) {
+			ImageView imageView = new ImageView(activity);
+			imageView.setOnClickListener(new OnClickListener() {
+				public void onClick(View v) {// 设置图片点击事件
+//					Toast.makeText(getActivity(),
+//							"点击的:" + myPager.getCurIndex(), Toast.LENGTH_SHORT)
+//							.show();
+				}
+			});
+			imageView.setImageResource(imageResId[i]);
+			imageView.setScaleType(ScaleType.CENTER_CROP);
+			listViews.add(imageView);
+		}
+
 	}
 
 	private void initData() {
@@ -240,7 +261,20 @@ public class StoryHomeFragment extends BaseFragment {
 
 	}
 
+
+	private MyImgScroll myPager; // 图片容器
+	private LinearLayout ovalLayout; // 圆点容器
+	private List<View> listViews; // 图片组
+
 	private void initLayout(View view) {
+
+		//开始滚动
+		myPager = (MyImgScroll)view.findViewById(R.id.myvp);
+		myPager.start(getActivity(), listViews, 4000, ovalLayout,
+				R.layout.ad_bottom_item, R.id.ad_item_v,
+				R.drawable.dot_focused, R.drawable.dot_normal);
+
+
 		img_left = (ImageView) view.findViewById(R.id.img_left);
 		img_left.setOnClickListener(this);
 
@@ -288,7 +322,7 @@ public class StoryHomeFragment extends BaseFragment {
 //		animationDrawable.stop();
 //		img_right.setVisibility(View.GONE);
 
-		list_story_type = (GridView) view.findViewById(R.id.list_story_type);
+		list_story_type = (MyGridView) view.findViewById(R.id.list_story_type);
 
 		String PINCODE_ID = preferences.getString(Constant.EXTRA_PINCODE_ID, null);
         boolean isLoggedIn=true;
@@ -389,15 +423,29 @@ public class StoryHomeFragment extends BaseFragment {
 		switch (v.getId()) {
 			case R.id.imgV_db:
 
+				Intent intent1=new Intent(mActivity,StorySortListActivity.class);
+
+				//用Bundle携带数据
+				Bundle bundle=new Bundle();
+				//传递name参数为tinyphp
+				bundle.putString("sortid", "点播");
+
+				bundle.putString("sortname","点播");
+
+				intent1.putExtras(bundle);
+
+				startActivity(intent1);
+				mActivity.overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+
 				break;
 		case R.id.img_left:
 			if (!Utils.getWifiState(mActivity)) {
 				showWIFIUnableDialog();
 				return;
 			}
-//			Intent intent = new Intent(mActivity, MyDeviceActivity.class);
-//			mActivity.startActivity(intent);
-//			mActivity.overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+			Intent intent = new Intent(mActivity, SearchFragment.class);
+			mActivity.startActivity(intent);
+			mActivity.overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
 		     break;
 		case R.id.img_right:
 //			Intent intent1=new Intent(mActivity,StoryContentListActivity.class);
@@ -406,7 +454,10 @@ public class StoryHomeFragment extends BaseFragment {
 		     break;
 		case R.id.Layout_electricity_temperature_signal:
 			include_bm_toy_state_layout.setVisibility(View.VISIBLE);
-			setViewSta_max(pbattery,online,ptem,pvolume);
+			if(pbattery!=null && online!=null &&ptem!=null && pvolume!=null){
+				setViewSta_max(pbattery,online,ptem,pvolume);
+			}
+
 			break;
 		case R.id.close_ib:
 			include_bm_toy_state_layout.setVisibility(View.GONE);

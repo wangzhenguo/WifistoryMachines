@@ -284,6 +284,7 @@
     <string name="wifi_airkiss_ready">玩具联网</string>
 
     <string name="chat_with">聊天</string>
+    <string name="search_with">搜索</string>
 
     <string name="wifi_name_airkiss_ready">当前用户还未绑定玩具</string>
     <string name="title_activity_conversation_list_fragment">ConversationListFragment</string>
@@ -305,7 +306,6 @@
     <string name="soft_update_cancel">取消</string>
 
 
-
     <string name="new_main_ui_toy_state_electricity">电量：%1$s</string>
     <string name="new_main_ui_toy_state_electricity_charging">充电中</string>
     <string name="new_main_ui_toy_state_offline">离线</string>
@@ -313,7 +313,20 @@
     <string name="new_main_ui_toy_state_sleep">离线</string>
     <string name="new_main_ui_toy_state_title">玩具状态</string>
     <string name="new_main_ui_toy_volume_value">当前音量：%1$s</string>
+    <string name="title_activity_search_fragment">搜索</string>
 
+    <string name="title_search_fragment_s">热门搜索</string>
+    <string name="title_search_fragment_null">还没有输入搜索的内容呢！</string>
+    <string name="search_hint_test">搜索歌曲、专辑</string>
+    <string name="search_btn_test1">虫儿飞</string>
+    <string name="search_btn_test2">彩虹的约定</string>
+    <string name="search_btn_test3">两只老虎</string>
+    <string name="search_btn_test4">拔萝卜</string>
+    <string name="search_btn_test5">小苹果</string>
+    <string name="search_btn_test6">三只小熊</string>
+    <string name="search_btn_test7">春天在哪里</string>
+    <string name="search_btn_test8">小毛驴</string>
+    <string name="search_btn_test9">数鸭子</string>
 
 
 </resources>

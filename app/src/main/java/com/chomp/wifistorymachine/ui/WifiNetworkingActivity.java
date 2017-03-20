@@ -57,7 +57,7 @@ public class WifiNetworkingActivity extends BaseActivity implements View.OnClick
     private LinearLayout btn_back;
 
     private String PINCODE_ID;
-    public static final int configTimeout = 60000;//60s
+    public static final int configTimeout = 75000;//60s
     private boolean TimesupFlag_cfg = false;
     private SCLibrary SCLib = new SCLibrary();
     private Animation operatingAnim=null;
@@ -66,6 +66,8 @@ public class WifiNetworkingActivity extends BaseActivity implements View.OnClick
     private Thread mThread;
     private  final int SENDING_OVER = 1;
     private  final int SENDING_ok = 2;
+
+
 
     private int msg_sta=0;
 
@@ -227,9 +229,16 @@ public class WifiNetworkingActivity extends BaseActivity implements View.OnClick
 //            finish();
 //        }
         if(LinearL_top_wifi.getVisibility()==View.VISIBLE){
+
             onBackPressed();
         }else if(RelativeL_wifi.getVisibility()==View.VISIBLE){
             msg_sta=0;
+            SCLibrary.ProfileSendTimeIntervalMs = 200; //200ms
+				/* Time interval(ms) between sending two packets. */
+            SCLibrary.PacketSendTimeIntervalMs  = 10; //10ms
+				/* Each packet sending counts. */
+            SCLibrary.EachPacketSendCounts = 1;
+            SCLib.rtk_sc_stop();
             handler.sendEmptyMessage(SENDING_ok);
         }
     }
@@ -266,6 +275,12 @@ public class WifiNetworkingActivity extends BaseActivity implements View.OnClick
                 break;
             case R.id.btn_back:
                 msg_sta=0;
+                SCLibrary.ProfileSendTimeIntervalMs = 200; //200ms
+				/* Time interval(ms) between sending two packets. */
+                SCLibrary.PacketSendTimeIntervalMs  = 10; //10ms
+				/* Each packet sending counts. */
+                SCLibrary.EachPacketSendCounts = 1;
+                SCLib.rtk_sc_stop();
                 handler.sendEmptyMessage(SENDING_ok);
                 break;
         }
@@ -329,7 +344,7 @@ public class WifiNetworkingActivity extends BaseActivity implements View.OnClick
 
 
 
-    private void Configure_action(final String ssid,final String password,final String rollcode)
+    private void Configure_action( String ssid, String password, String rollcode)
     {
         int stepOneTimeout = 30000;
         int connect_count = 200;
@@ -345,11 +360,16 @@ public class WifiNetworkingActivity extends BaseActivity implements View.OnClick
             return;
         }
 
+
+
         SCLib.rtk_sc_reset();
         SCLib.rtk_sc_set_default_pin("");
         SCLib.rtk_sc_set_pin(rollcode);
         SCLib.rtk_sc_set_ssid(ssid);
         SCLib.rtk_sc_set_password(password);
+
+        Log.d("zcw","rollcode="+rollcode + ",ssid="+ssid + ",password=="+password);
+
         TimesupFlag_cfg = false;
 
         SCLib.rtk_sc_set_ip(wifiIP);
@@ -510,6 +530,9 @@ public class WifiNetworkingActivity extends BaseActivity implements View.OnClick
         SCLib.rtk_sc_exit();
         SCCtlOps.ConnectedSSID = null;
         SCCtlOps.ConnectedPasswd = null;
+
+
+
     }
 
     @Override

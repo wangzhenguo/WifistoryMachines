@@ -394,13 +394,12 @@ public class ConversationListFragment extends BaseActivity {
 
                     data = data.substring(0, data.indexOf("\0"));
                     result.append(data);
+                    Log.d("wzg","data=="+data);
                     JSONObject jsonObject=new JSONObject(data);//我们需要把json串看成一个大的对象
                     String url=jsonObject.getString("url");//获取pet对象的参数
-
                     Log.d("zcw", "result2==" + result);
                     Log.d("zcw", "data==" + data);
                     Log.d("zcw", "url==" + url);
-
                     if (tmplen < 0) {
                         Thread.sleep(50);
                         statem++;

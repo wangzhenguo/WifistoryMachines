@@ -329,6 +329,34 @@ public class HttpUtils
 	    OkHttpUtils.getInstance().postAsyn(context, tag, "http://www.bbgushiji.com:833/res/filelist.aspx", json, callback);
 	  }
 
+	public static void getSearchData(String searchName, Context context, String tag, OkHttpUtils.OkCallBack callback)
+	{
+		// String params = String.format("/tb/querySF?album=%s", new Object[] { album });
+		JSONObject json = new JSONObject();
+		try {
+			json.put("appid",appid);
+			json.put("keyword",searchName);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+
+		OkHttpUtils.getInstance().postAsyn(context, tag, "http://www.bbgushiji.com:833/res/search.aspx", json, callback);
+	}
+
+
+	public static void getDataByOnDemand(Context context, String tag, OkHttpUtils.OkCallBack callback)
+	{
+		JSONObject json = new JSONObject();
+		try {
+			json.put("appid",appid);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+
+		OkHttpUtils.getInstance().postAsyn(context, tag, "http://www.bbgushiji.com:833/ondemand/ranking.aspx", json, callback);
+	}
+
+
 
 
 	public static void saveVoiceMessage(File GS_mp3File,String savemp3Path,Context context, String tag, OkHttpUtils.OkCallBack callback)

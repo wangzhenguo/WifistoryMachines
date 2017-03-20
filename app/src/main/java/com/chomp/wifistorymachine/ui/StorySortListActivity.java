@@ -113,8 +113,9 @@ public class StorySortListActivity extends BaseActivity{
         preferences = getSharedPreferences(Constant.SHARED_KARROBOT, Context.MODE_PRIVATE);
 
         audiobooksSorts=new ArrayList<AudiobooksSort>();
-        loadData();
         setTitleName();
+        loadData();
+
         initView();
     }
 
@@ -132,7 +133,14 @@ public class StorySortListActivity extends BaseActivity{
 //            audiobooksSorts = KARDBHelper.newInstance(mContext).queryAudiobooksSort(sortname);
 //            if(audiobooksSorts==null||audiobooksSorts.size()<=0){
             Log.i(TAG,"有声读物分类列表：没有缓存");
-            HttpUtils.getDataByAlbum(sortid,mContext,GET_STORY_QUERY_SF,okCallBack);
+            if(item_id>=0 && item_id<=16){
+                HttpUtils.getDataByAlbum(sortid,mContext,GET_STORY_QUERY_SF,okCallBack);
+            }else if(item_id== 17){
+                HttpUtils.getDataByOnDemand(mContext,GET_STORY_QUERY_SF,okCallBack);
+            }else if(item_id== 18){
+                //收藏
+            }
+
 //            }else{
 //                Log.i(TAG,"有声读物分类列表：有缓存-------");
 //                handler.sendEmptyMessage(HANDLER_LOAD_AFTER);
@@ -204,6 +212,12 @@ public class StorySortListActivity extends BaseActivity{
                 break;
             case "自然科普":
                 item_id=16;
+                break;
+            case "点播":
+                item_id=17;
+                break;
+            case "收藏":
+                item_id=18;
                 break;
         }
     }

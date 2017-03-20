@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/BMNavPage" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_header"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-    <include layout="@layout/device_title_xml" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_bg_common"
+        android:orientation="vertical">
 
-<LinearLayout
-    style="@style/BMNavPage"
-    android:background="#fff9f9f9"
-    android:padding="38.0dip"
-    android:paddingTop="55.0dip" >
+        <include layout="@layout/device_title_xml" />
+
+        <LinearLayout
+            style="@style/BMNavPage"
+            android:background="#fff9f9f9"
+            android:padding="38.0dip"
+            android:paddingTop="55.0dip">
 
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="55.0dip"
+                android:src="@drawable/bm_wifi_icon" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="55.0dip"
-        android:src="@drawable/bm_wifi_icon" />
+            <Button
+                android:id="@+id/go_to_airkiss"
+                style="@style/BMNextBt"
+                android:layout_marginBottom="28.0dip"
+                android:padding="13.0dip"
+                android:text="@string/airkiss_not_ready" />
 
-    <Button
-        android:id="@+id/go_to_airkiss"
-        style="@style/BMNextBt"
-        android:layout_marginBottom="28.0dip"
-        android:padding="13.0dip"
-        android:text="@string/airkiss_not_ready" />
+            <Button
+                android:id="@+id/go_to_bind"
+                style="@style/BMNextBt"
+                android:layout_marginBottom="28.0dip"
+                android:padding="13.0dip"
+                android:text="@string/airkiss_ready" />
 
-    <Button
-        android:id="@+id/go_to_bind"
-        style="@style/BMNextBt"
-        android:layout_marginBottom="28.0dip"
-        android:padding="13.0dip"
-        android:text="@string/airkiss_ready" />
+            <Button
+                android:id="@+id/go_to_unbind"
+                style="@style/BMNextBt"
+                android:layout_marginBottom="28.0dip"
+                android:padding="13.0dip"
+                android:text="@string/Un_airkiss_ready" />
 
-    <Button
-        android:id="@+id/go_to_unbind"
-        style="@style/BMNextBt"
-        android:layout_marginBottom="28.0dip"
-        android:padding="13.0dip"
-        android:text="@string/Un_airkiss_ready" />
-
-</LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+</RelativeLayout>

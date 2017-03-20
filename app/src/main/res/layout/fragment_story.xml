@@ -1,237 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/color_header"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical" >
+    android:background="#ffffff">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/color_bg_common"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
 
-        <include layout="@layout/title_two_image" />
-
-        <RelativeLayout
+        <ScrollView
+            android:id="@+id/MySearchScroll"
             android:layout_width="fill_parent"
-            android:layout_height="@dimen/dimen_350_dip"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/banner"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none"
             >
 
 
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/color_header"
+                android:fitsSystemWindows="true"
+
+                android:orientation="vertical">
+
+                <!--<com.handmark.pulltorefresh.library.PullToRefreshScrollView-->
+                <!--android:id="@+id/ptr_scrollview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentTop="true" >-->
 
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="1" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/color_bg_common"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
 
-            <ImageView
-                android:id="@+id/touxiang_bg"
-                android:layout_width="@dimen/dimen_60_dip"
-                android:layout_height="@dimen/dimen_60_dip"
-                android:layout_below="@+id/textView1"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/touxiang"
+                    <include layout="@layout/title_two_image" />
 
-                />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dimen_320_dip"
+                        android:layout_gravity="center_horizontal"
+                       >
 
-            <TextView
-                android:id="@+id/textV_ToyName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/touxiang_bg"
-                android:layout_centerHorizontal="true"
-                android:text="奇奇"
-                android:textColor="@color/white"
-                android:textSize="@dimen/dimen_16_dip"
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/dimen_200_dip"
+                            android:layout_gravity="center_horizontal" >
 
-                />
+                            <com.chomp.wifistorymachine.view.MyImgScroll
+                                android:id="@+id/myvp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/dimen_200_dip" >
+                            </com.chomp.wifistorymachine.view.MyImgScroll>
 
+                        </RelativeLayout>
 
 
-            <ImageView
-                android:id="@+id/imgV_db"
-                android:layout_width="@dimen/dimen_60_dip"
-                android:layout_height="@dimen/dimen_60_dip"
-                android:layout_alignBottom="@+id/imgV_sc"
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text=""
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/touxiang_bg"
+                            android:layout_width="@dimen/dimen_80_dip"
+                            android:layout_height="@dimen/dimen_80_dip"
+                            android:layout_below="@+id/textView1"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/touxiang"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textV_ToyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/touxiang_bg"
+                            android:layout_centerHorizontal="true"
+                            android:text="奇奇"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_16_dip"
+
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/imgV_db"
+                            android:layout_width="@dimen/dimen_60_dip"
+                            android:layout_height="@dimen/dimen_60_dip"
+                            android:layout_alignBottom="@+id/imgV_sc"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/dimen_24_dip"
+                            android:layout_marginLeft="@dimen/dimen_24_dip"
+                            android:background="@drawable/home_demand_db"
+
+                            />
+
+
+                        <TextView
+                            android:id="@+id/textV_db"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/imgV_db"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dimen_25_dip"
+                            android:paddingLeft="@dimen/dimen_13_dip"
+                            android:text="点播"
+                            android:textColor="#E16AC6"
+                            android:textSize="@dimen/dimen_16_dip"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/imgV_sc"
+                            android:layout_width="@dimen/dimen_60_dip"
+                            android:layout_height="@dimen/dimen_60_dip"
+                            android:layout_above="@+id/textV_sc"
+                            android:layout_toLeftOf="@+id/touxiang_bg"
+                            android:background="@drawable/home_collection"
+                            android:layout_marginRight="@dimen/dimen_6_dip"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textV_sc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/imgV_sc"
+                            android:layout_alignParentBottom="true"
+
+                            android:paddingLeft="@dimen/dimen_13_dip"
+                            android:text="收藏"
+                            android:textColor="#E16AC6"
+                            android:textSize="@dimen/dimen_16_dip"
+
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/imgV_znpc"
+                            android:layout_width="@dimen/dimen_60_dip"
+                            android:layout_height="@dimen/dimen_60_dip"
+                            android:layout_alignTop="@+id/imgV_sc"
+                            android:layout_marginLeft="@dimen/dimen_45_dip"
+                            android:layout_toRightOf="@+id/textView1"
+                            android:background="@drawable/home_intelligent_evaluation" />
+
+                        <TextView
+                            android:id="@+id/textV_znpc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/imgV_znpc"
+                            android:layout_below="@+id/imgV_znpc"
+                            android:text="智能评测"
+                            android:textColor="#A887FC"
+                            android:textSize="@dimen/dimen_16_dip"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/imgV_mmq"
+                            android:layout_width="@dimen/dimen_60_dip"
+                            android:layout_height="@dimen/dimen_60_dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/imgV_db"
+                            android:layout_marginRight="@dimen/dimen_24_dip"
+                            android:background="@drawable/home_mom_circle" />
+
+                        <TextView
+                            android:id="@+id/textV_mmq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/imgV_mmq"
+                            android:layout_below="@+id/imgV_mmq"
+                            android:paddingLeft="@dimen/dimen_6_dip"
+                            android:text="妈妈圈"
+                            android:textColor="#A887FC"
+                            android:textSize="@dimen/dimen_16_dip" />
+
+
+                        <LinearLayout
+                            android:id="@+id/Layout_electricity_temperature_signal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30.0dip"
+                            android:layout_alignEnd="@+id/textV_mmq"
+                            android:layout_alignRight="@+id/textV_mmq"
+                            android:layout_alignTop="@+id/textView1"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bm_toy_state_bar_background"
+                            android:gravity="bottom"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/electricity_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/bm_main_ui_toy_battery_res_list" />
+
+                            <ImageView
+                                android:id="@+id/online_state_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/bm_toy_offline" />
+
+                            <ImageView
+                                android:id="@+id/volume_control_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="10.0dip"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/bm_toy_volume" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_video_remen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_10_dip"
+
+                        android:text="专辑分类："
+                        android:textSize="@dimen/dimen_16_dip"
+                        android:textColor="#F49F10"
+                        android:textStyle="bold"
+                        />
+
+                    <com.chomp.wifistorymachine.ui.MyGridView
+
+                        android:id="@+id/list_story_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:columnWidth="@dimen/dimen_50_dip"
+                        android:elevation="1dp"
+                        android:horizontalSpacing="@dimen/dimen_20_dip"
+                        android:numColumns="3"
+                        android:paddingBottom="@dimen/dimen_80_dip"
+                        android:paddingLeft="@dimen/dimen_20_dip"
+                        android:paddingRight="@dimen/dimen_20_dip"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/dimen_10_dip"></com.chomp.wifistorymachine.ui.MyGridView>
+
+
+                </LinearLayout>
+
+
+                <!--</com.handmark.pulltorefresh.library.PullToRefreshScrollView>-->
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_marginBottom="@dimen/dimen_24_dip"
-                android:layout_marginLeft="@dimen/dimen_24_dip"
-                android:background="@drawable/home_demand_db"
+                android:layout_alignParentStart="true">
 
-                />
-
-
-
-            <TextView
-                android:id="@+id/textV_db"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="点播"
-                android:layout_alignLeft="@+id/imgV_db"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="@dimen/dimen_45_dip"
-                android:paddingLeft="@dimen/dimen_13_dip"
-                android:textColor="#E16AC6"
-                android:textSize="@dimen/dimen_16_dip"
-
-                />
-
-
-
-            <ImageView
-                android:id="@+id/imgV_sc"
-                android:layout_width="@dimen/dimen_60_dip"
-                android:layout_height="@dimen/dimen_60_dip"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="@dimen/dimen_40_dip"
-                android:layout_marginLeft="@dimen/dimen_60_dip"
-                android:layout_toRightOf="@+id/imgV_db"
-                android:background="@drawable/home_collection" />
-
-            <TextView
-                android:id="@+id/textV_sc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imgV_sc"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="@dimen/dimen_20_dip"
-                android:paddingLeft="@dimen/dimen_13_dip"
-                android:text="收藏"
-                android:textColor="#E16AC6"
-                android:textSize="@dimen/dimen_16_dip"
-
-                />
-
-
-
-            <ImageView
-                android:id="@+id/imgV_znpc"
-                android:layout_width="@dimen/dimen_60_dip"
-                android:layout_height="@dimen/dimen_60_dip"
-                android:layout_alignTop="@+id/imgV_sc"
-                android:layout_marginLeft="@dimen/dimen_35_dip"
-                android:layout_toRightOf="@+id/textView1"
-                android:background="@drawable/home_intelligent_evaluation" />
-
-            <TextView
-                android:id="@+id/textV_znpc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imgV_znpc"
-                android:layout_below="@+id/imgV_znpc"
-                android:text="智能评测"
-                android:textColor="#A887FC"
-                android:textSize="@dimen/dimen_16_dip"
-
-                />
-
-
-
-            <ImageView
-                android:id="@+id/imgV_mmq"
-                android:layout_width="@dimen/dimen_60_dip"
-                android:layout_height="@dimen/dimen_60_dip"
-                android:layout_alignParentRight="true"
-                android:layout_alignTop="@+id/imgV_db"
-                android:layout_marginRight="@dimen/dimen_24_dip"
-                android:background="@drawable/home_mom_circle" />
-
-            <TextView
-                android:id="@+id/textV_mmq"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imgV_mmq"
-                android:layout_below="@+id/imgV_mmq"
-                android:text="妈妈圈"
-                android:textColor="#A887FC"
-                android:textSize="@dimen/dimen_16_dip"
-                android:paddingLeft="@dimen/dimen_6_dip"
-                />
-
-
-            <LinearLayout
-                android:id="@+id/Layout_electricity_temperature_signal"
-                android:layout_width="wrap_content"
-                android:layout_height="30.0dip"
-                android:background="@drawable/bm_toy_state_bar_background"
-                android:gravity="bottom"
-                android:orientation="horizontal"
-                android:layout_alignTop="@+id/textView1"
-                android:layout_alignRight="@+id/textV_mmq"
-                android:layout_alignEnd="@+id/textV_mmq"
-                android:layout_marginRight="16dp"
-                android:layout_marginEnd="16dp"
-                android:visibility="gone"
-                >
-
-                <ImageView
-                    android:id="@+id/electricity_iv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/bm_main_ui_toy_battery_res_list" />
-
-                <ImageView
-                    android:id="@+id/online_state_iv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_marginLeft="10.0dip"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/bm_toy_offline" />
-
-                <ImageView
-                    android:id="@+id/volume_control_iv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_marginLeft="10.0dip"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/bm_toy_volume" />
-            </LinearLayout>
-
+                <include
+                    android:id="@+id/include_bm_toy_state_layout"
+                    layout="@layout/bm_toy_state_layout"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
         </RelativeLayout>
+    </RelativeLayout>
 
-
-
-
-        <GridView
-            android:id="@+id/list_story_type"
-            android:layout_alignParentTop="true"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_10_dip"
-            android:columnWidth="@dimen/dimen_50_dip"
-            android:stretchMode="columnWidth"
-            android:numColumns="3"
-            android:horizontalSpacing="@dimen/dimen_20_dip"
-            android:verticalSpacing="@dimen/dimen_10_dip"
-            android:layout_centerInParent="true"
-            android:paddingLeft="@dimen/dimen_20_dip"
-            android:paddingRight="@dimen/dimen_20_dip"
-            android:paddingBottom="@dimen/dimen_80_dip"
-            android:scrollbars="none"
-            android:elevation="1dp">
-        </GridView>
-
-
-    </LinearLayout>
-
-    <include
-        android:id="@+id/include_bm_toy_state_layout"
-        layout="@layout/bm_toy_state_layout"
-        android:visibility="gone"
-        />
-</RelativeLayout>
+</LinearLayout>
